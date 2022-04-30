@@ -1,0 +1,106 @@
+1: {name: 'Bermuda', rank: '157.5'}
+2: {name: 'Switzerland', rank: '141.1'}
+3: {name: 'Cayman Islands', rank: '138.0'}
+4: {name: 'Israel', rank: '124.6'}
+5: {name: 'Turks and Caicos Islands', rank: '124.6'}
+6: {name: 'Barbados', rank: '121.6'}
+7: {name: 'New Caledonia', rank: '121.4'}
+8: {name: 'Iceland', rank: '119.1'}
+9: {name: 'Denmark', rank: '116.5'}
+10: {name: 'Ireland', rank: '116.4'}
+11: {name: 'Norway', rank: '113.2'}
+12: {name: 'Luxembourg', rank: '110.0'}
+13: {name: 'Bahamas', rank: '109.5'}
+14: {name: 'Australia', rank: '108.1'}
+15: {name: 'Japan', rank: '106.7'}
+16: {name: 'Finland', rank: '105.5'}
+17: {name: 'New Zealand', rank: '105.1'}
+18: {name: 'Sweden', rank: '102.5'}
+19: {name: 'United Kingdom', rank: '100.3'}
+20: {name: 'United States', rank: '100.0'}
+21: {name: 'Canada', rank: '98.7'}
+22: {name: 'Netherlands', rank: '96.3'}
+23: {name: 'Belgium', rank: '94.8'}
+24: {name: 'France', rank: '94.1'}
+25: {name: 'Austria', rank: '93.3'}
+26: {name: 'Germany', rank: '88.9'}
+27: {name: 'Italy', rank: '84.3'}
+28: {name: 'South Korea', rank: '82.2'}
+29: {name: 'Spain', rank: '81.1'}
+30: {name: 'Hong Kong', rank: '80.5'}
+31: {name: 'Macao', rank: '75.1'}
+32: {name: 'Singapore', rank: '74.8'}
+33: {name: 'Portugal', rank: '74.4'}
+34: {name: 'Greece', rank: '73.4'}
+35: {name: 'Qatar', rank: '73.0'}
+36: {name: 'United Arab Emirates', rank: '72.3'}
+37: {name: 'Czechia', rank: '64.0'}
+38: {name: 'China', rank: '61.3'}
+39: {name: 'Costa Rica', rank: '61.2'}
+40: {name: 'Chile', rank: '59.3'}
+41: {name: 'Croatia', rank: '58.8'}
+42: {name: 'Hungary', rank: '55.2'}
+43: {name: 'Ecuador', rank: '54.3'}
+44: {name: 'Equatorial Guinea', rank: '53.9'}
+45: {name: 'Iran', rank: '51.5'}
+46: {name: 'Albania', rank: '50.2'}
+47: {name: 'Mexico', rank: '50.0'}
+48: {name: 'Montenegro', rank: '49.8'}
+49: {name: 'Poland', rank: '49.7'}
+50: {name: 'El Salvador', rank: '49.2'}
+51: {name: 'Brunei', rank: '49.1'}
+52: {name: 'Serbia', rank: '48.8'}
+53: {name: 'Brazil', rank: '47.4'}
+54: {name: 'Romania', rank: '46.1'}
+55: {name: 'Bulgaria', rank: '45.7'}
+56: {name: 'Saudi Arabia', rank: '45.1'}
+57: {name: 'Fiji', rank: '44.4'}
+58: {name: 'Iraq', rank: '44.3'}
+59: {name: 'Morocco', rank: '44.1'}
+60: {name: 'Namibia', rank: '43.8'}
+61: {name: 'Kenya', rank: '42.9'}
+62: {name: 'North Macedonia', rank: '42.4'}
+63: {name: 'South Africa', rank: '42.4'}
+64: {name: 'Timor-Leste', rank: '41.9'}
+65: {name: 'Colombia', rank: '41.4'}
+66: {name: 'Cameroon', rank: '41.4'}
+67: {name: 'Philippines', rank: '41.0'}
+68: {name: 'Ivory Coast', rank: '40.8'}
+69: {name: 'Senegal', rank: '40.7'}
+70: {name: 'Thailand', rank: '40.6'}
+71: {name: 'Kosovo', rank: '40.1'}
+72: {name: 'Moldova', rank: '39.2'}
+73: {name: 'Malaysia', rank: '39.1'}
+74: {name: 'Bangladesh', rank: '38.8'}
+75: {name: 'Paraguay', rank: '38.6'}
+76: {name: 'Eswatini', rank: '38.3'}
+77: {name: 'Bolivia', rank: '37.7'}
+78: {name: 'Cambodia', rank: '37.1'}
+79: {name: 'Turkey', rank: '36.9'}
+80: {name: 'Russia', rank: '36.8'}
+81: {name: 'Benin', rank: '36.7'}
+82: {name: 'Nicaragua', rank: '36.3'}
+83: {name: 'Laos', rank: '36.3'}
+84: {name: 'Indonesia', rank: '35.9'}
+85: {name: 'Nigeria', rank: '35.4'}
+86: {name: 'Vietnam', rank: '35.0'}
+87: {name: 'Mongolia', rank: '34.9'}
+88: {name: 'Armenia', rank: '34.1'}
+89: {name: 'Kazakhstan', rank: '34.1'}
+90: {name: 'Sri Lanka', rank: '31.8'}
+91: {name: 'Georgia', rank: '31.8'}
+92: {name: 'Burma', rank: '31.6'}
+93: {name: 'Algeria', rank: '31.1'}
+94: {name: 'Ukraine', rank: '30.2'}
+95: {name: 'Zambia', rank: '29.6'}
+96: {name: 'Tunisia', rank: '29.3'}
+97: {name: 'Azerbaijan', rank: '29.2'}
+98: {name: 'Bhutan', rank: '29.2'}
+99: {name: 'Ghana', rank: '29.0'}
+100: {name: 'India', rank: '28.6'}
+101: {name: 'Nepal', rank: '28.1'}
+102: {name: 'Egypt', rank: '26.8'}
+103: {name: 'Kyrgyzstan', rank: '25.8'}
+104: {name: 'Tajikistan', rank: '25.1'}
+105: {name: 'Pakistan', rank: '24.8'}
+106: {name: 'Angola', rank: '24.8'}

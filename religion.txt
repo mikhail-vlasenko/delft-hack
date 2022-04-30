@@ -1,0 +1,146 @@
+0: {name: 'Niger', rank: '100%'}
+1: {name: 'Somalia[a]', rank: '98%'}
+2: {name: 'Yemen', rank: '98%'}
+3: {name: 'Thailand', rank: '98%[1]'}
+4: {name: 'Egypt', rank: '97%'}
+5: {name: 'Comoros', rank: '97%'}
+6: {name: 'Indonesia', rank: '97%'}
+7: {name: 'Afghanistan', rank: '97%'}
+8: {name: 'Malawi', rank: '97%'}
+9: {name: 'Mauritania', rank: '97%'}
+10: {name: 'Sri Lanka', rank: '97%'}
+11: {name: 'Cameroon', rank: '96%'}
+12: {name: 'Malaysia', rank: '96%'}
+13: {name: 'Cambodia', rank: '96%'}
+14: {name: 'Bangladesh', rank: '96%'}
+15: {name: 'Senegal', rank: '96%'}
+16: {name: 'Jordan[a]', rank: '96%'}
+17: {name: 'Saudi Arabia', rank: '96%'}
+18: {name: 'Myanmar[a]', rank: '96%'}
+19: {name: 'Laos[a]', rank: '96%'}
+20: {name: 'Guinea[a]', rank: '96%'}
+21: {name: 'Morocco', rank: '96%'}
+22: {name: 'Ghana', rank: '95%'}
+23: {name: 'Zambia', rank: '95%'}
+24: {name: 'Algeria', rank: '95%'}
+25: {name: 'Chad', rank: '95%'}
+26: {name: 'Rwanda', rank: '95%'}
+27: {name: 'Republic of the Congo[a]', rank: '95%'}
+28: {name: 'Mali', rank: '95%'}
+29: {name: 'Central African Republic[a]', rank: '94%'}
+30: {name: 'Kenya', rank: '94%'}
+31: {name: 'Liberia[a]', rank: '94%'}
+32: {name: 'Democratic Republic of the Congo', rank: '94%'}
+33: {name: 'Bahrain', rank: '94%'}
+34: {name: 'State of Palestine', rank: '93%'}
+35: {name: 'Sudan', rank: '93%'}
+36: {name: 'Uganda', rank: '93%'}
+37: {name: 'Madagascar[a]', rank: '93%'}
+38: {name: 'Benin[a]', rank: '93%'}
+39: {name: 'Nepal', rank: '93%'}
+40: {name: 'Tunisia', rank: '93%'}
+41: {name: 'Namibia[a]', rank: '92%'}
+42: {name: 'Trinidad and Tobago[a]', rank: '92%'}
+43: {name: 'Paraguay', rank: '92%'}
+44: {name: 'Pakistan', rank: '92%'}
+45: {name: 'Kuwait', rank: '91%'}
+46: {name: 'India', rank: '90%'}
+47: {name: 'Oman', rank: '90%'}
+48: {name: 'Tanzania', rank: '89%'}
+49: {name: 'Bolivia', rank: '89%'}
+50: {name: 'Syria', rank: '89%'}
+51: {name: 'Iraq', rank: '89%'}
+52: {name: 'Zimbabwe', rank: '88%'}
+53: {name: 'Cote d Ivoire', rank: '88%'}
+54: {name: 'Burkina Faso[a]', rank: '88%'}
+55: {name: 'Panama', rank: '88%'}
+56: {name: 'Angola[a]', rank: '88%'}
+57: {name: 'Guatemala', rank: '88%'}
+58: {name: 'Burundi', rank: '88%'}
+59: {name: 'Brazil', rank: '87%'}
+60: {name: 'Dominican Republic', rank: '87%'}
+61: {name: 'Lebanon', rank: '87%'}
+62: {name: 'Mozambique[a]', rank: '86%'}
+63: {name: 'Malta', rank: '86%'}
+64: {name: 'Qatar', rank: '86%'}
+65: {name: 'South Africa', rank: '85%'}
+66: {name: 'Tajikistan', rank: '85%'}
+67: {name: 'Haiti[a]', rank: '85%'}
+68: {name: 'Peru', rank: '84%'}
+69: {name: 'Romania', rank: '84%'}
+70: {name: 'Colombia', rank: '83%'}
+71: {name: 'Ecuador', rank: '82%'}
+72: {name: 'Georgia', rank: '81%'}
+73: {name: 'Turkmenistan', rank: '80%'}
+74: {name: 'Togo[a]', rank: '80%'}
+75: {name: 'Venezuela', rank: '79%'}
+76: {name: 'Costa Rica', rank: '79%'}
+77: {name: 'Armenia', rank: '79%'}
+78: {name: 'Botswana[a]', rank: '77%'}
+79: {name: 'Iran[a]', rank: '77%'}
+80: {name: 'United Arab Emirates', rank: '76%'}
+81: {name: 'North Macedonia', rank: '76%'}
+82: {name: 'El Salvador', rank: '76%'}
+83: {name: 'Bosnia and Herzegovina', rank: '75%'}
+84: {name: 'Mexico', rank: '73%'}
+85: {name: 'Portugal[a]', rank: '72%'}
+86: {name: 'Italy', rank: '72%'}
+87: {name: 'Kyrgyzstan', rank: '72%'}
+88: {name: 'Montenegro', rank: '71%'}
+89: {name: 'Greece', rank: '71%'}
+90: {name: 'Nicaragua', rank: '70%'}
+91: {name: 'Croatia', rank: '70%'}
+92: {name: 'Singapore', rank: '70%'}
+93: {name: 'Jamaica[a]', rank: '70%'}
+94: {name: 'Nigeria', rank: '69%'}
+95: {name: 'Djibouti', rank: '68%'}
+96: {name: 'United States', rank: '67%'}
+97: {name: 'Argentina', rank: '65%'}
+98: {name: 'Turkey', rank: '64%'}
+99: {name: 'Belize[a]', rank: '62%'}
+100: {name: 'Chile', rank: '60%'}
+101: {name: 'Uzbekistan', rank: '55%'}
+102: {name: 'Serbia', rank: '54%'}
+103: {name: 'Ireland', rank: '54%'}
+104: {name: 'Kazakhstan', rank: '53%'}
+105: {name: 'Israel', rank: '51%'}
+106: {name: 'Albania', rank: '50%'}
+107: {name: 'Poland', rank: '50%'}
+108: {name: 'Spain', rank: '49%'}
+109: {name: 'Slovenia', rank: '47%'}
+110: {name: 'Slovakia[a]', rank: '47%'}
+111: {name: 'Ukraine', rank: '46%'}
+112: {name: 'Taiwan', rank: '40%'}
+113: {name: 'Germany', rank: '40%'}
+114: {name: 'Uruguay', rank: '40%'}
+115: {name: 'Lithuania', rank: '40%'}
+116: {name: 'Luxembourg', rank: '39%'}
+117: {name: 'Hungary', rank: '39%'}
+118: {name: 'Azerbaijan', rank: '36%'}
+119: {name: 'Cuba[a]', rank: '34%'}
+120: {name: 'Bulgaria[a]', rank: '34%'}
+121: {name: 'Russia', rank: '34%'}
+122: {name: 'Belarus', rank: '34%'}
+123: {name: 'Australia[a]', rank: '33%'}
+124: {name: 'Netherlands[a]', rank: '33%'}
+125: {name: 'Belgium[a]', rank: '33%'}
+126: {name: 'South Korea', rank: '33%'}
+127: {name: 'Philippines', rank: '32%'}
+128: {name: 'France', rank: '30%'}
+129: {name: 'Latvia', rank: '29%'}
+130: {name: 'Cyprus', rank: '25%'}
+131: {name: 'United Kingdom', rank: '25%'}
+132: {name: 'Japan', rank: '24%'}
+133: {name: 'Hong Kong', rank: '24%'}
+134: {name: 'Finland[a]', rank: '23%'}
+135: {name: 'Switzerland', rank: '23%'}
+136: {name: 'Norway[a]', rank: '22%'}
+137: {name: 'Canada', rank: '22%'}
+138: {name: 'Czechia[a]', rank: '21%'}
+139: {name: 'Moldova', rank: '21%'}
+140: {name: 'Denmark', rank: '19%'}
+141: {name: 'New Zealand[a]', rank: '18%'}
+142: {name: 'Austria[a]', rank: '17%'}
+143: {name: 'Sweden', rank: '17%'}
+144: {name: 'Estonia', rank: '16%'}
+145: {name: 'Vietnam', rank: '15%'}
