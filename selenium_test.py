@@ -30,3 +30,4 @@ for city in cities:
 print(len(cities))
 # print(elem.find_elements_by_css_selector("*"))
 driver.close()
+
