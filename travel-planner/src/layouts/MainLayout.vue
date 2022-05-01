@@ -92,63 +92,26 @@
             method="post"
             @submit.prevent="onSubmit"
           >
-            <q-card class="q-pa-lg q-mb-md">
-              <div class="q-pa-md">
-                <q-btn-dropdown color="primary" label="Dropdown Button">
-                  <q-list>
-                    <q-item clickable v-close-popup @click="onItemClick">
-                      <q-item-section>
-                        <q-item-label>Very hot</q-item-label>
-                      </q-item-section>
-                    </q-item>
 
-                    <q-item clickable v-close-popup @click="onItemClick">
-                      <q-item-section>
-                        <q-item-label>Hot</q-item-label>
-                      </q-item-section>
-                    </q-item>
+              <q-card class="q-pa-lg q-mb-md">
+                <p class="q-pb-md">Temperature Selector</p>
+                <q-select v-model="selectModel" :options="selectOptions" label="Select" />
+              </q-card>
 
-                    <q-item clickable v-close-popup @click="onItemClick">
-                      <q-item-section>
-                        <q-item-label>Warm</q-item-label>
-                      </q-item-section>
-                    </q-item>
-
-                    <q-item clickable v-close-popup @click="onItemClick">
-                      <q-item-section>
-                        <q-item-label>Chilly</q-item-label>
-                      </q-item-section>
-                    </q-item>
-
-                    <q-item clickable v-close-popup @click="onItemClick">
-                      <q-item-section>
-                        <q-item-label>Cold</q-item-label>
-                      </q-item-section>
-                    </q-item>
-
-                    <q-item clickable v-close-popup @click="onItemClick">
-                      <q-item-section>
-                        <q-item-label>Very cold</q-item-label>
-                      </q-item-section>
-                    </q-item>
-                  </q-list>
-                </q-btn-dropdown>
-              </div>
               <q-card class="q-pa-lg q-mb-md">
               <p class="q-pb-md">Temperature not important --- Temperature important</p>
               <q-field outlined name="temp_imp">
                 <q-slider
                   name="temp_imp"
-                  v-model="safety"
+                  v-model="temperature"
                   snap
                   label
                   label-always
                   markers
-                  :min="0"
+                  :min="-10"
                   :max="10"
                 />
               </q-field>
-            </q-card>
             </q-card>
 
             <q-card class="q-pa-lg q-mb-md">
@@ -314,10 +277,13 @@ export default defineComponent({
     const cleanliness = ref(0)
     const religiousness = ref(0)
     const alcohol = ref(0)
+    const temperature = ref(0)
     let countryLoc = ref('')
     let stars = ref(5)
     let alert = ref(false)
     let slide = ref(0)
+    let selectModel = ref(null)
+    let selectOptions = ["Very Hot", "Hot", "Warm", "Chilly", "Cold", "Very Cold"]
 
     const redir = (evt) => {
       window.open(`https://www.google.com/search?q=${countryLoc.value}`, '_blank')
@@ -339,18 +305,21 @@ export default defineComponent({
           walkability: walkability.value,
           cleanliness: cleanliness.value,
           religiousness: religiousness.value,
-          alcohol: alcohol.value
+          alcohol: alcohol.value,
+          temperature: temperature.value,
+          selectModel: selectModel.value
         }
       })
       let data = res.data;
       console.log(data);
       countryLoc.value = data
       alert.value = true
+      slide.value = 0
       //evt.target.submit()
     }
 
     return {
-      safety, price, weather, english, walkability, cleanliness, religiousness, alcohol, onSubmit, alert, countryLoc, stars, redir, slide
+      safety, price, weather, english, walkability, cleanliness, religiousness, alcohol, onSubmit, alert, countryLoc, stars, redir, slide, selectModel, selectOptions, temperature
 
     };
   },
