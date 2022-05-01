@@ -118,6 +118,25 @@
                 </q-field>
               </q-card>
 
+             <q-card class="q-pa-lg q-mb-md">
+              <div class="row justify-between">
+                <p class="q-pb-md">Not Touristic</p>
+                <p class="q-pb-md">Touristic</p>
+              </div>
+              <q-field outlined name="tourist">
+                <q-slider
+                  name="tourist"
+                  v-model="tourist"
+                  snap
+                  label
+                  label-always
+                  markers
+                  :min="-10"
+                  :max="10"
+                />
+              </q-field>
+            </q-card>
+
             <q-card class="q-pa-lg q-mb-md">
               <div class="row justify-between">
                   <p class="q-pb-md">Low Safety</p>
@@ -270,24 +289,7 @@
               </q-field>
             </q-card>
 
-            <q-card class="q-pa-lg q-mb-md">
-              <div class="row justify-between">
-                <p class="q-pb-md">Not Touristic</p>
-                <p class="q-pb-md">Touristic</p>
-              </div>
-              <q-field outlined name="tourist">
-                <q-slider
-                  name="tourist"
-                  v-model="tourist"
-                  snap
-                  label
-                  label-always
-                  markers
-                  :min="-10"
-                  :max="10"
-                />
-              </q-field>
-            </q-card>
+
 
             <q-btn label="Submit" type="submit" color="primary"/>
 
