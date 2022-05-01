@@ -1,0 +1,164 @@
+country	id	index
+Iceland	1	1.100
+New Zealand	2	1.253
+Denmark	3	1.256
+Portugal	4	1.267
+Slovenia	5	1.315
+Austria	6	1.317
+Switzerland	7	1.323
+Ireland	8	1.326
+Czechia	9	1.329
+Canada	10	1.330
+Singapore	11	1.347
+Japan	12	1.373
+Finland	13	1.402
+Norway	14	1.438
+Sweden	15	1.460
+Australia	16	1.470
+Croatia	17	1.480
+Germany	18	1.480
+Hungary	19	1.494
+Belgium	20	1.496
+Netherlands	21	1.506
+Bhutan	22	1.510
+Malaysia	23	1.515
+Poland	24	1.524
+Romania	25	1.530
+Slovakia	26	1.557
+Bulgaria	27	1.577
+Mauritius	28	1.592
+Qatar	29	1.605
+Estonia	30	1.612
+Spain	31	1.621
+Italy	32	1.652
+United Kingdom of Great Britain and Northern Ireland	33	1.658
+Taiwan	34	1.662
+Latvia	35	1.686
+Kuwait	36	1.688
+Lithuania	37	1.689
+Ghana	38	1.715
+Costa Rica	39	1.735
+North Macedonia	40	1.744
+Botswana	41	1.753
+Indonesia	42	1.783
+Mongolia	43	1.783
+Serbia	44	1.797
+Lao People's Democratic Republic	45	1.809
+Sierra Leone	46	1.813
+Uruguay	47	1.817
+Albania	48	1.824
+Chile	49	1.831
+Viet Nam	50	1.835
+Montenegro	51	1.847
+United Arab Emirates	52	1.848
+Gambia	53	1.853
+Senegal	54	1.864
+France	55	1.868
+Timor-Leste	56	1.873
+Korea, Republic of	57	1.877
+Tanzania, United Republic of	58	1.892
+Malawi	59	1.909
+Moldova, Republic of	60	1.909
+Cyprus	61	1.912
+Equatorial Guinea	62	1.915
+Jordan	63	1.916
+Panama	64	1.919
+Namibia	65	1.927
+Greece	66	1.932
+Kazakhstan	67	1.936
+Argentina	68	1.945
+Eswatini	69	1.955
+Madagascar	70	1.963
+Zambia	71	1.964
+Bosnia and Herzegovina	72	1.970
+Oman	73	1.982
+Jamaica	74	1.992
+Paraguay	75	1.997
+Kyrgyzstan	76	1.998
+Liberia	77	1.998
+Cambodia	78	2.008
+Morocco	79	2.015
+Angola	80	2.017
+Kosovo	81	2.017
+Dominican Republic	82	2.024
+Rwanda	83	2.028
+Trinidad and Tobago	84	2.029
+Nepal	85	2.033
+Peru	86	2.034
+Cuba	87	2.042
+Ecuador	88	2.044
+Georgia	89	2.054
+Uzbekistan	90	2.062
+Bangladesh	91	2.068
+Guinea	92	2.069
+Gabon	93	2.074
+Armenia	94	2.075
+Sri Lanka	95	2.083
+Benin	96	2.093
+Tajikistan	97	2.095
+Tunisia	98	2.108
+Guinea-Bissau	99	2.113
+China	100	2.114
+Guyana	101	2.114
+Bahrain	102	2.121
+Côte d'Ivoire	103	2.123
+Mozambique	104	2.123
+Bolivia (Plurinational State of)	105	2.140
+Djibouti	106	2.146
+Papua New Guinea	107	2.149
+Haiti	108	2.151
+Turkmenistan	109	2.154
+El Salvador	110	2.184
+Guatemala	111	2.195
+Lesotho	112	2.202
+Thailand	113	2.205
+Uganda	114	2.219
+Togo	115	2.239
+Kenya	116	2.254
+Belarus	117	2.285
+Mauritania	118	2.290
+Congo	119	2.291
+Algeria	120	2.310
+Azerbaijan	121	2.334
+United States of America	122	2.337
+South Africa	123	2.344
+Honduras	124	2.371
+Saudi Arabia	125	2.376
+Egypt	126	2.397
+Philippines	127	2.417
+Brazil	128	2.430
+Burundi	129	2.434
+Nicaragua	130	2.445
+Myanmar	131	2.457
+Chad	132	2.489
+Zimbabwe	133	2.490
+Burkina Faso	134	2.527
+India	135	2.553
+Eritrea	136	2.555
+Niger	137	2.589
+Palestine	138	2.610
+Ethiopia	139	2.613
+Mexico	140	2.620
+Israel	141	2.633
+Iran (Islamic Republic of)	142	2.637
+Ukraine	143	2.660
+Colombia	144	2.694
+Cameroon	145	2.700
+Nigeria	146	2.712
+Lebanon	147	2.797
+Mali	148	2.813
+Turkey	149	2.843
+Pakistan	150	2.868
+Korea (Democratic People's Republic of)	151	2.923
+Venezuela (Bolivarian Republic of)	152	2.934
+Sudan	153	2.936
+Russian Federation	154	2.993
+Central African Republic	155	3.131
+Libya	156	3.166
+Congo, Democratic Republic of the	157	3.196
+Somalia	158	3.211
+Iraq	159	3.257
+South Sudan	160	3.363
+Syrian Arab Republic	161	3.371
+Yemen	162	3.407
+Afghanistan	163	3.631

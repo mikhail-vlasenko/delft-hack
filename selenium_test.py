@@ -12,7 +12,7 @@ import preferences.parse_utils as parse_utils
 countries = parse_utils.import_csv()
 actual_data = price.save(countries)
 
-with open('religion.csv', 'w', newline='\n') as csvfile:
+with open('data/religion.csv', 'w', newline='\n') as csvfile:
     writer = csv.writer(csvfile, delimiter=' ',
                             quotechar='|')
     for row in actual_data:

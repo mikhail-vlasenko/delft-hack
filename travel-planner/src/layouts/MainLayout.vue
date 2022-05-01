@@ -246,7 +246,7 @@ export default defineComponent({
       // console.log(evt)
       let res = await axios({
         method: 'post',
-        url: 'https://randomthing2.free.beeceptor.com',
+        url: 'http://localhost:5000/submit',
         headers: {},
         data: {
           safety: safety.value,
