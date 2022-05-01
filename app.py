@@ -5,6 +5,8 @@ from flask_cors import cross_origin
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 from flask import jsonify
+from bs4 import BeautifulSoup
+import requests
 
 app = Flask(__name__)
 
@@ -39,7 +41,17 @@ def hello_world():  # put application's code here
 
     best_countries = list(df['country'].iloc[:10].values)
 
-    return jsonify(best_countries)
+    final_list = []
+    for country in best_countries:
+        new_object = {}
+        response = requests.get(url='https://unsplash.com/s/photos/' + country)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        image = soup.find('img', class_='YVj9w ht4YT')
+        new_object['name'] = country
+        new_object['media'] = image['src']
+        final_list.append(new_object)
+
+    return jsonify(final_list)
 
 
 if __name__ == '__main__':
