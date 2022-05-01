@@ -23,6 +23,21 @@ def temp_range(temp):
     return 5
 
 
+def temperature_to_value(temp):
+    if temp == 'Very Cold':
+        return 0
+    elif temp == 'Cold':
+        return 1
+    elif temp == 'Chilly':
+        return 2
+    elif temp == 'Warm':
+        return 3
+    elif temp == 'Hot':
+        return 4
+    else:
+        return 5
+
+
 def sign(value):
     if value >= 0:
         return 1
@@ -38,8 +53,8 @@ def get_rankings():  # put application's code here
     price = data['price']
     weather = data['weather']
     try:
-        temperature = data['temperature']
-        temperature_importance = data['temperature_importance']
+        temperature = data['selectModel']
+        temperature_importance = data['temperature']
     except:
         temperature = 0
         temperature_importance = 0
@@ -58,7 +73,7 @@ def get_rankings():  # put application's code here
     df['index_safety'] = 1 - df['index_safety']
     df['temp_range'] = df['temp'].apply(temp_range)
 
-    df['score'] = - abs(df['temp_range'] - temperature) / 3 * sign(temperature_importance) * temperature_importance ** 2 + \
+    df['score'] = - abs(df['temp_range'] - temperature_to_value(temperature)) / 3 * sign(temperature_importance) * temperature_importance ** 2 + \
                   sign(walkability) * df['top 5 distance'] * walkability ** 2 + \
                   sign(english) * df['eng'] * english ** 2 + \
                   sign(weather) * df['precipitation'] * weather ** 2 + \
