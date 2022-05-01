@@ -63,6 +63,7 @@ def get_rankings():  # put application's code here
     cleanliness = data['cleanliness']
     religiousness = data['religiousness']
     alcohol = data['alcohol']
+    tourism = data['tourist']
 
     df = pd.read_csv('data/full_data.csv')
     df.fillna(df.mean(), inplace=True)
@@ -83,7 +84,8 @@ def get_rankings():  # put application's code here
                   sign(religiousness) * df['index_religion'] * religiousness ** 2 + \
                   sign(price) * df['index_prices'] * price ** 2 + \
                   sign(cleanliness) * df['index_cleanliness'] * cleanliness ** 2 + \
-                  sign(safety) * df['index_safety'] * safety ** 2
+                  sign(safety) * df['index_safety'] * safety ** 2 + \
+                  sign(tourism) * df['tourism'] * tourism ** 2
 
     df.sort_values('score', ascending=False, inplace=True)
 

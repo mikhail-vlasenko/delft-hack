@@ -112,7 +112,7 @@
                     label
                     label-always
                     markers
-                    :min="-10"
+                    :min="0"
                     :max="10"
                   />
                 </q-field>
