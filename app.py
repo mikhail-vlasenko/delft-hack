@@ -42,8 +42,15 @@ def get_rankings():  # put application's code here
     religiousness = data['religiousness']
     alcohol = data['alcohol']
 
-    df['score'] = - abs(temp_range(df['temp']) - temperature) / 3 * temperature_importance ** 2 + \
-                  df['top 5 distance'] * walkability ** 2 + \
+    df = pd.read_csv('data/full_data.csv')
+    df.fillna(df.mean(), inplace=True)
+
+    df['precipitation'] = 1 - df['precipitation']
+    df['windy days'] = 1 - df['windy days']
+    df['index_prices'] = 1 - df['index_prices']
+    df['index_safety'] = 1 - df['index_safety']
+
+    df['score'] = df['top 5 distance'] * walkability ** 2 + \
                   df['eng'] * english ** 2 + \
                   df['precipitation'] * weather ** 2 + \
                   df['sunshine'] * weather ** 2 + \
@@ -72,11 +79,4 @@ def get_rankings():  # put application's code here
 
 
 if __name__ == '__main__':
-    df = pd.read_csv('data/full_data.csv')
-    df.fillna(df.mean(), inplace=True)
-
-    df['precipitation'] = 1 - df['precipitation']
-    df['windy days'] = 1 - df['windy days']
-    df['index_prices'] = 1 - df['index_prices']
-    df['index_safety'] = 1 - df['index_safety']
     app.run(port=7777)
