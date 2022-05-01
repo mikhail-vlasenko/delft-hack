@@ -1,11 +1,24 @@
 from flask import Flask
 from flask import request
-from flask import Response
 from flask_cors import cross_origin
 import pandas as pd
 from flask import jsonify
 
 app = Flask(__name__)
+
+
+def temp_range(temp):
+    if temp < 0:
+        return 0
+    if temp < 10:
+        return 1
+    if temp < 17:
+        return 2
+    if temp < 22:
+        return 3
+    if temp < 28:
+        return 4
+    return 5
 
 
 @app.route('/submit', methods=['POST', 'OPTIONS'])
@@ -15,16 +28,24 @@ def get_rankings():  # put application's code here
     safety = data['safety']
     price = data['price']
     weather = data['weather']
+    temperature = data['temperature']
     english = data['english']
     walkability = data['walkability']
     cleanliness = data['cleanliness']
     religiousness = data['religiousness']
     alcohol = data['alcohol']
 
-    df['score'] = df['eng'] * english ** 2 + df['top 5 distance'] * walkability ** 2 + df['temp'] * weather ** 2 + \
-                  df['precipitation'] * weather ** 2 + df['sunshine'] * weather ** 2 + df['windy days'] * weather ** 2 + \
-                  df['index_alcohol'] * alcohol ** 2 + df['index_religion'] * religiousness ** 2 + \
-                  df['index_prices'] * price ** 2 + df['index_cleanliness'] * cleanliness ** 2 + df['index_safety'] * safety ** 2
+    df['score'] = - abs(temp_range(df['temp']) - temperature) + \
+                  df['top 5 distance'] * walkability ** 2 + \
+                  df['eng'] * english ** 2 + \
+                  df['precipitation'] * weather ** 2 + \
+                  df['sunshine'] * weather ** 2 + \
+                  df['windy days'] * weather ** 2 + \
+                  df['index_alcohol'] * alcohol ** 2 + \
+                  df['index_religion'] * religiousness ** 2 + \
+                  df['index_prices'] * price ** 2 + \
+                  df['index_cleanliness'] * cleanliness ** 2 + \
+                  df['index_safety'] * safety ** 2
 
     df.sort_values('score', ascending=False, inplace=True)
 
