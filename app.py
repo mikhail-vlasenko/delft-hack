@@ -30,14 +30,19 @@ def get_rankings():  # put application's code here
     safety = data['safety']
     price = data['price']
     weather = data['weather']
-    temperature = data['temperature']
+    try:
+        temperature = data['temperature']
+        temperature_importance = data['temperature_importance']
+    except:
+        temperature = 0
+        temperature_importance = 0
     english = data['english']
     walkability = data['walkability']
     cleanliness = data['cleanliness']
     religiousness = data['religiousness']
     alcohol = data['alcohol']
 
-    df['score'] = - abs(temp_range(df['temp']) - temperature) + \
+    df['score'] = - abs(temp_range(df['temp']) - temperature) / 3 * temperature_importance ** 2 + \
                   df['top 5 distance'] * walkability ** 2 + \
                   df['eng'] * english ** 2 + \
                   df['precipitation'] * weather ** 2 + \
