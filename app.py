@@ -23,6 +23,13 @@ def temp_range(temp):
     return 5
 
 
+def sign(value):
+    if value >= 0:
+        return 1
+    else:
+        return -1
+
+
 @app.route('/submit', methods=['POST', 'OPTIONS'])
 @cross_origin()
 def get_rankings():  # put application's code here
@@ -51,17 +58,17 @@ def get_rankings():  # put application's code here
     df['index_safety'] = 1 - df['index_safety']
     df['temp_range'] = df['temp'].apply(temp_range)
 
-    df['score'] = - abs(df['temp_range'] - temperature) / 3 * temperature_importance ** 2 + \
-                  df['top 5 distance'] * walkability ** 2 + \
-                  df['eng'] * english ** 2 + \
-                  df['precipitation'] * weather ** 2 + \
-                  df['sunshine'] * weather ** 2 + \
-                  df['windy days'] * weather ** 2 + \
-                  df['index_alcohol'] * alcohol ** 2 + \
-                  df['index_religion'] * religiousness ** 2 + \
-                  df['index_prices'] * price ** 2 + \
-                  df['index_cleanliness'] * cleanliness ** 2 + \
-                  df['index_safety'] * safety ** 2
+    df['score'] = - abs(df['temp_range'] - temperature) / 3 * sign(temperature_importance) * temperature_importance ** 2 + \
+                  sign(walkability) * df['top 5 distance'] * walkability ** 2 + \
+                  sign(english) * df['eng'] * english ** 2 + \
+                  sign(weather) * df['precipitation'] * weather ** 2 + \
+                  sign(weather) * df['sunshine'] * weather ** 2 + \
+                  sign(weather) * df['windy days'] * weather ** 2 + \
+                  sign(alcohol) * df['index_alcohol'] * alcohol ** 2 + \
+                  sign(religiousness) * df['index_religion'] * religiousness ** 2 + \
+                  sign(price) * df['index_prices'] * price ** 2 + \
+                  sign(cleanliness) * df['index_cleanliness'] * cleanliness ** 2 + \
+                  sign(safety) * df['index_safety'] * safety ** 2
 
     df.sort_values('score', ascending=False, inplace=True)
 
