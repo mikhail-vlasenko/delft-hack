@@ -13,48 +13,72 @@
     </q-header>
 
     <q-dialog v-model="alert">
-      <q-card class="my-card">
-        <q-img
-          :src="img_link"
-        />
-
-        <q-card-section>
-          <q-btn
-            fab
-            color="primary"
-            icon="place"
-            class="absolute"
-            style="top: 0; right: 12px; transform: translateY(-50%);"
-          />
-
-          <div class="row no-wrap items-center">
-            <div class="col text-h6 ellipsis">
-              {{ countryLoc }}
+      <div class="q-pa-md full-width">
+        <q-carousel
+          arrows
+          animated
+          v-model="slide"
+          height="400px"
+        >
+          <q-carousel-slide v-for="(country,index) in countryLoc" :name="index" :img-src="country.media" :key="index">
+            <div class="absolute-bottom custom-caption">
+              <div class="text-h2">{{country.name}}</div>
+<!--              <div class="text-subtitle1">Mountains</div>-->
             </div>
-            <div class="col-auto text-grey text-caption q-pt-md row no-wrap items-center">
-            </div>
-          </div>
-
-          <q-rating readonly v-model="stars" :max="5" size="32px" />
-        </q-card-section>
-
-        <q-card-section class="q-pt-none">
-          <div class="text-subtitle1">
-            Suggested Holiday Location
-          </div>
-          <div class="text-caption text-grey">
-            Your ideal holiday destination was discovered using our custom algorithm and datasets.
-          </div>
-        </q-card-section>
-
-        <q-separator />
-
-        <q-card-actions align="right">
-          <q-btn v-close-popup flat color="primary" label="More info" @click="redir" />
-<!--          <q-btn v-close-popup flat color="primary" round icon="event" />-->
-        </q-card-actions>
-      </q-card>
+          </q-carousel-slide>
+<!--          <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/mountains.jpg">-->
+<!--            <div class="absolute-bottom custom-caption">-->
+<!--              <div class="text-h2">First stop</div>-->
+<!--              <div class="text-subtitle1">Mountains</div>-->
+<!--            </div>-->
+<!--          </q-carousel-slide>-->
+        </q-carousel>
+      </div>
     </q-dialog>
+
+    <!--    <q-dialog v-model="alert">-->
+<!--      <q-card class="my-card">-->
+<!--        <q-img-->
+<!--          :src="img_link"-->
+<!--        />-->
+
+<!--        <q-card-section>-->
+<!--          <q-btn-->
+<!--            fab-->
+<!--            color="primary"-->
+<!--            icon="place"-->
+<!--            class="absolute"-->
+<!--            style="top: 0; right: 12px; transform: translateY(-50%);"-->
+<!--          />-->
+
+<!--          <div class="row no-wrap items-center">-->
+<!--            <div class="col text-h6 ellipsis">-->
+<!--              {{ countryLoc }}-->
+<!--            </div>-->
+<!--            <div class="col-auto text-grey text-caption q-pt-md row no-wrap items-center">-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <q-rating readonly v-model="stars" :max="5" size="32px" />-->
+<!--        </q-card-section>-->
+
+<!--        <q-card-section class="q-pt-none">-->
+<!--          <div class="text-subtitle1">-->
+<!--            Suggested Holiday Location-->
+<!--          </div>-->
+<!--          <div class="text-caption text-grey">-->
+<!--            Your ideal holiday destination was discovered using our custom algorithm and datasets.-->
+<!--          </div>-->
+<!--        </q-card-section>-->
+
+<!--        <q-separator />-->
+
+<!--        <q-card-actions align="right">-->
+<!--          <q-btn v-close-popup flat color="primary" label="More info" @click="redir" />-->
+<!--&lt;!&ndash;          <q-btn v-close-popup flat color="primary" round icon="event" />&ndash;&gt;-->
+<!--        </q-card-actions>-->
+<!--      </q-card>-->
+<!--    </q-dialog>-->
 
 <!--    <q-page-container>-->
 <!--      <router-view />-->
@@ -231,10 +255,10 @@ export default defineComponent({
     const cleanliness = ref(0)
     const religiousness = ref(0)
     const alcohol = ref(0)
-    let img_link = ref('')
     let countryLoc = ref('')
     let stars = ref(5)
     let alert = ref(false)
+    let slide = ref(0)
 
     const redir = (evt) => {
       window.open(`https://www.google.com/search?q=${countryLoc.value}`, '_blank')
@@ -261,16 +285,23 @@ export default defineComponent({
       })
       let data = res.data;
       console.log(data);
-      img_link.value = data.media
-      countryLoc.value = data.country
+      countryLoc.value = data
       alert.value = true
       //evt.target.submit()
     }
 
     return {
-      safety, price, weather, english, walkability, cleanliness, religiousness, alcohol, onSubmit, alert, img_link, countryLoc, stars, redir
+      safety, price, weather, english, walkability, cleanliness, religiousness, alcohol, onSubmit, alert, countryLoc, stars, redir, slide
 
     };
   },
 })
 </script>
+
+<style lang="sass" scoped>
+.custom-caption
+  text-align: center
+  padding: 12px
+  color: white
+  background-color: rgba(0, 0, 0, .3)
+</style>
