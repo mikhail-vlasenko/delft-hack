@@ -28,6 +28,7 @@ def hello_world():  # put application's code here
     df['precipitation'] = 1 - df['precipitation']
     df['windy days'] = 1 - df['windy days']
     df['index_prices'] = 1 - df['index_prices']
+    df['index_safety'] = 1 - df['index_safety']
 
     df['score'] = df['eng'] * english ** 2 + df['top 5 distance'] * walkability ** 2 + df['temp'] * weather ** 2 + \
                   df['precipitation'] * weather ** 2 + df['sunshine'] * weather ** 2 + df['windy days'] * weather ** 2 + \
