@@ -7,7 +7,7 @@
           <q-avatar>
             <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
           </q-avatar>
-          Travel Planner
+          DestVisor
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
@@ -84,9 +84,9 @@
 <!--      <router-view />-->
 <!--    </q-page-container>-->
     <q-page class="flex flex-center">
-      <q-card class="col-8 q-mt-xl">
-        <q-card-section class="col-12 full-width">
-          <h1>Travel Planner</h1>
+      <q-card class="col-8 q-mt-xl" style="width: 600px">
+        <q-card-section class="col-12">
+          <h1 class="flex flex-center">DestVisor</h1>
           <q-form
             action="https://webhook.site/5f87d83b-b7d1-4b35-ab61-5c6c1ade027e"
             method="post"
@@ -291,7 +291,7 @@
 
 
 
-            <q-btn label="Submit" type="submit" color="primary"/>
+            <q-btn label="Search" type="submit" color="primary"/>
 
 
           </q-form>
