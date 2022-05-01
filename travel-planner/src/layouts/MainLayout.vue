@@ -270,6 +270,25 @@
               </q-field>
             </q-card>
 
+            <q-card class="q-pa-lg q-mb-md">
+              <div class="row justify-between">
+                <p class="q-pb-md">Not Touristic</p>
+                <p class="q-pb-md">Touristic</p>
+              </div>
+              <q-field outlined name="tourist">
+                <q-slider
+                  name="tourist"
+                  v-model="tourist"
+                  snap
+                  label
+                  label-always
+                  markers
+                  :min="-10"
+                  :max="10"
+                />
+              </q-field>
+            </q-card>
+
             <q-btn label="Submit" type="submit" color="primary"/>
 
 
@@ -306,6 +325,7 @@ export default defineComponent({
     const religiousness = ref(0)
     const alcohol = ref(0)
     const temperature = ref(0)
+    const tourist = ref(0)
     let countryLoc = ref('')
     let stars = ref(5)
     let alert = ref(false)
@@ -335,7 +355,8 @@ export default defineComponent({
           religiousness: religiousness.value,
           alcohol: alcohol.value,
           temperature: temperature.value,
-          selectModel: selectModel.value
+          selectModel: selectModel.value,
+          tourist: tourist.value
         }
       })
       let data = res.data;
@@ -347,7 +368,7 @@ export default defineComponent({
     }
 
     return {
-      safety, price, weather, english, walkability, cleanliness, religiousness, alcohol, onSubmit, alert, countryLoc, stars, redir, slide, selectModel, selectOptions, temperature
+      safety, price, weather, english, walkability, cleanliness, religiousness, alcohol, onSubmit, alert, countryLoc, stars, redir, slide, selectModel, selectOptions, temperature, tourist
 
     };
   },
