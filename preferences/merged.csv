@@ -1,0 +1,194 @@
+id,alpha2,alpha3,country,index_alcohol,index_religion,index_prices,index_cleanliness,index_safety
+4,af,afg,Afghanistan,0.2,97%,,25.5,3.631
+8,al,alb,Albania,7.5,50%,50.2,49.0,1.824
+12,dz,dza,Algeria,0.9,95%,31.1,44.8,2.31
+20,ad,and,Andorra,11.3,,,,
+24,ao,ago,Angola,6.4,88%,24.8,29.7,2.017
+28,ag,atg,Antigua and Barbuda,7.0,,,48.5,
+32,ar,arg,Argentina,9.8,65%,,52.2,1.945
+51,am,arm,Armenia,5.5,79%,34.1,52.3,2.075
+36,au,aus,Australia,10.6,33%,108.1,74.9,1.47
+40,at,aut,Austria,11.6,17%,93.3,79.6,1.317
+31,az,aze,Azerbaijan,0.8,36%,29.2,46.5,2.334
+44,bs,bhs,Bahamas,4.4,,109.5,43.5,
+48,bh,bhr,Bahrain,1.9,94%,,51.0,2.121
+50,bd,bgd,Bangladesh,0.0,96%,38.8,29.0,2.068
+52,bb,brb,Barbados,9.6,,121.6,45.6,
+112,by,blr,Belarus,11.2,34%,,53.0,2.285
+56,be,bel,Belgium,12.1,33%,94.8,73.3,1.496
+84,bz,blz,Belize,6.7,62%,,41.9,
+204,bj,ben,Benin,3.0,93%,36.7,30.0,2.093
+64,bt,btn,Bhutan,0.6,,29.2,39.3,1.51
+68,bo,bol,Bolivia (Plurinational State of),4.8,89%,37.7,44.3,2.14
+70,ba,bih,Bosnia and Herzegovina,6.4,75%,,45.4,1.97
+72,bw,bwa,Botswana,8.4,77%,,40.4,1.753
+76,br,bra,Brazil,7.8,87%,47.4,51.2,2.43
+96,bn,brn,Brunei Darussalam,0.4,,49.1,54.8,
+100,bg,bgr,Bulgaria,12.7,34%,45.7,57.0,1.577
+854,bf,bfa,Burkina Faso,8.2,88%,,38.3,2.527
+108,bi,bdi,Burundi,7.5,88%,,27.0,2.434
+132,cv,cpv,Cabo Verde,5.7,,,,
+116,kh,khm,Cambodia,6.7,96%,37.1,33.6,2.008
+120,cm,cmr,Cameroon,8.9,96%,41.4,33.6,2.7
+124,ca,can,Canada,8.9,22%,98.7,71.0,1.33
+140,cf,caf,Central African Republic,3.3,94%,,36.9,3.131
+148,td,tcd,Chad,1.5,95%,,26.7,2.489
+152,cl,chl,Chile,9.3,60%,59.3,55.3,1.831
+156,cn,chn,China,7.2,,61.3,37.3,2.114
+170,co,col,Colombia,5.8,83%,41.4,52.9,2.694
+174,km,com,Comoros,0.9,97%,,32.1,
+178,cg,cog,Congo,7.8,95%,,30.8,2.291
+180,cd,cod,"Congo, Democratic Republic of the",2.6,94%,,36.4,3.196
+188,cr,cri,Costa Rica,4.8,79%,61.2,52.5,1.735
+384,ci,civ,Côte d'Ivoire,8.4,88%,40.8,25.8,2.123
+191,hr,hrv,Croatia,8.9,70%,58.8,63.1,1.48
+192,cu,cub,Cuba,6.1,34%,,48.4,2.042
+196,cy,cyp,Cyprus,10.8,25%,,64.8,1.912
+203,cz,cze,Czechia,14.4,21%,64.0,71.0,1.329
+208,dk,dnk,Denmark,10.4,19%,116.5,82.5,1.256
+262,dj,dji,Djibouti,0.5,68%,,28.1,2.146
+212,dm,dma,Dominica,8.2,,,44.6,
+214,do,dom,Dominican Republic,6.9,87%,,46.3,2.024
+218,ec,ecu,Ecuador,4.4,82%,54.3,51.0,2.044
+818,eg,egy,Egypt,0.4,97%,26.8,43.3,2.397
+222,sv,slv,El Salvador,3.7,76%,49.2,43.1,2.184
+226,gq,gnq,Equatorial Guinea,11.3,,53.9,38.1,1.915
+232,er,eri,Eritrea,1.3,,,30.4,2.555
+233,ee,est,Estonia,11.6,16%,,65.3,1.612
+748,sz,swz,Eswatini,9.9,,38.3,33.8,1.955
+231,et,eth,Ethiopia,2.8,,,34.4,2.613
+242,fj,fji,Fiji,3.0,,44.4,34.4,
+246,fi,fin,Finland,10.7,23%,105.5,78.9,1.402
+250,fr,fra,France,12.6,30%,94.1,80.0,1.868
+266,ga,gab,Gabon,11.5,,,45.8,2.074
+270,gm,gmb,Gambia,3.8,,,27.9,1.853
+268,ge,geo,Georgia,9.8,81%,31.8,41.3,2.054
+276,de,deu,Germany,13.4,40%,88.9,77.2,1.48
+288,gh,gha,Ghana,2.7,95%,29.0,27.6,1.715
+300,gr,grc,Greece,10.4,71%,73.4,69.1,1.932
+308,gd,grd,Grenada,9.3,,,43.1,
+320,gt,gtm,Guatemala,2.4,88%,,31.8,2.195
+324,gn,gin,Guinea,1.3,96%,,26.4,2.069
+624,gw,gnb,Guinea-Bissau,4.8,,,29.1,2.113
+328,gy,guy,Guyana,6.3,,,35.9,2.114
+332,ht,hti,Haiti,5.8,85%,,27.0,2.151
+340,hn,hnd,Honduras,4.0,,,37.8,2.371
+348,hu,hun,Hungary,11.4,39%,55.2,63.7,1.494
+352,is,isl,Iceland,9.1,,119.1,72.3,1.1
+356,in,ind,India,5.7,90%,28.6,27.6,2.553
+360,id,idn,Indonesia,0.8,97%,35.9,37.8,1.783
+364,ir,irn,Iran (Islamic Republic of),1.0,77%,51.5,48.0,2.637
+368,iq,irq,Iraq,0.4,89%,44.3,39.5,3.257
+372,ie,irl,Ireland,13.0,54%,116.4,72.8,1.326
+376,il,isr,Israel,3.8,51%,124.6,65.8,2.633
+380,it,ita,Italy,7.5,72%,84.3,71.0,1.652
+388,jm,jam,Jamaica,4.2,70%,,48.2,1.992
+392,jp,jpn,Japan,8.0,24%,106.7,75.1,1.373
+400,jo,jor,Jordan,0.7,96%,,53.4,1.916
+398,kz,kaz,Kazakhstan,7.7,53%,34.1,44.7,1.936
+404,ke,ken,Kenya,3.4,94%,42.9,34.7,2.254
+296,ki,kir,Kiribati,0.4,,,37.7,
+408,kp,prk,Korea (Democratic People's Republic of),3.9,,,,2.923
+410,kr,kor,"Korea, Republic of",10.2,33%,82.2,66.5,1.877
+414,kw,kwt,Kuwait,0.0,91%,,53.6,1.688
+417,kg,kgz,Kyrgyzstan,6.2,72%,25.8,39.8,1.998
+418,la,lao,Lao People's Democratic Republic,10.4,96%,36.3,34.8,1.809
+428,lv,lva,Latvia,12.9,29%,,61.6,1.686
+422,lb,lbn,Lebanon,1.5,87%,,45.4,2.797
+426,ls,lso,Lesotho,5.0,,,28.0,2.202
+430,lr,lbr,Liberia,5.8,94%,,22.6,1.998
+434,ly,lby,Libya,0.0,,,,3.166
+438,li,lie,Liechtenstein,,,,,
+440,lt,ltu,Lithuania,15.0,40%,,62.9,1.689
+442,lu,lux,Luxembourg,13.0,39%,110.0,82.3,
+450,mg,mdg,Madagascar,1.9,93%,,26.5,1.963
+454,mw,mwi,Malawi,3.7,97%,,38.3,1.909
+458,my,mys,Malaysia,0.9,96%,39.1,47.9,1.515
+462,mv,mdv,Maldives,2.7,,,35.6,
+466,ml,mli,Mali,1.3,95%,,29.4,2.813
+470,mt,mlt,Malta,8.1,86%,,70.7,
+584,mh,mhl,Marshall Islands,,,,30.8,
+478,mr,mrt,Mauritania,0.0,97%,,27.7,2.29
+480,mu,mus,Mauritius,3.6,,,45.1,1.592
+484,mx,mex,Mexico,6.5,73%,50.0,52.6,2.62
+583,fm,fsm,Micronesia (Federated States of),2.5,,,33.0,
+498,md,mda,"Moldova, Republic of",15.2,21%,39.2,44.4,1.909
+492,mc,mco,Monaco,,,,,
+496,mn,mng,Mongolia,7.4,,34.9,32.2,1.783
+499,me,mne,Montenegro,8.0,71%,49.8,46.3,1.847
+504,ma,mar,Morocco,0.6,96%,44.1,42.3,2.015
+508,mz,moz,Mozambique,2.4,86%,,33.9,2.123
+104,mm,mmr,Myanmar,4.8,96%,31.6,25.1,2.457
+516,na,nam,Namibia,9.8,92%,43.8,40.2,1.927
+520,nr,nru,Nauru,6.0,,,,
+524,np,npl,Nepal,2.0,93%,28.1,32.7,2.033
+528,nl,nld,Netherlands,8.7,33%,96.3,75.3,1.506
+554,nz,nzl,New Zealand,10.7,18%,105.1,71.3,1.253
+558,ni,nic,Nicaragua,5.2,70%,36.3,39.2,2.445
+562,ne,ner,Niger,0.5,100%,,30.8,2.589
+566,ng,nga,Nigeria,13.4,69%,35.4,31.0,2.712
+807,mk,mkd,North Macedonia,8.1,76%,42.4,55.4,1.744
+578,no,nor,Norway,7.5,22%,113.2,77.7,1.438
+512,om,omn,Oman,0.8,90%,,38.5,1.982
+586,pk,pak,Pakistan,0.3,92%,24.8,33.1,2.868
+585,pw,plw,Palau,,,,,
+591,pa,pan,Panama,7.9,88%,,47.3,1.919
+598,pg,png,Papua New Guinea,1.2,,,32.4,2.149
+600,py,pry,Paraguay,7.2,92%,38.6,46.4,1.997
+604,pe,per,Peru,6.3,84%,,44.0,2.034
+608,ph,phl,Philippines,6.6,32%,41.0,38.4,2.417
+616,pl,pol,Poland,11.6,50%,49.7,60.9,1.524
+620,pt,prt,Portugal,12.3,72%,74.4,67.0,1.267
+634,qa,qat,Qatar,2.0,86%,73.0,37.1,1.605
+642,ro,rou,Romania,12.6,84%,46.1,64.7,1.53
+643,ru,rus,Russian Federation,11.7,34%,36.8,50.5,2.993
+646,rw,rwa,Rwanda,9.0,95%,,33.8,2.028
+659,kn,kna,Saint Kitts and Nevis,9.4,,,,
+662,lc,lca,Saint Lucia,9.9,,,43.1,
+670,vc,vct,Saint Vincent and the Grenadines,8.2,,,48.4,
+882,ws,wsm,Samoa,2.5,,,37.3,
+674,sm,smr,San Marino,,,,,
+678,st,stp,Sao Tome and Principe,6.8,,,37.6,
+682,sa,sau,Saudi Arabia,0.2,96%,45.1,44.0,2.376
+686,sn,sen,Senegal,0.7,96%,40.7,30.7,1.864
+688,rs,srb,Serbia,11.1,54%,48.8,55.2,1.797
+690,sc,syc,Seychelles,13.8,,,58.2,
+694,sl,sle,Sierra Leone,5.7,,,25.7,1.813
+702,sg,sgp,Singapore,2.5,70%,74.8,58.1,1.347
+703,sk,svk,Slovakia,11.5,47%,,68.3,1.557
+705,si,svn,Slovenia,12.6,47%,,72.0,1.315
+90,sb,slb,Solomon Islands,1.4,,,26.7,
+706,so,som,Somalia,0.0,98%,,,3.211
+710,za,zaf,South Africa,9.3,85%,42.4,43.1,2.344
+728,ss,ssd,South Sudan,,,,,3.363
+724,es,esp,Spain,10.0,49%,81.1,74.3,1.621
+144,lk,lka,Sri Lanka,4.3,97%,31.8,39.0,2.083
+729,sd,sdn,Sudan,0.5,93%,,34.8,2.936
+740,sr,sur,Suriname,5.1,,,45.2,
+752,se,swe,Sweden,9.2,17%,102.5,78.7,1.46
+756,ch,che,Switzerland,11.5,23%,141.1,81.5,1.323
+760,sy,syr,Syrian Arab Republic,0.3,89%,,,3.371
+762,tj,tjk,Tajikistan,3.3,85%,25.1,38.2,2.095
+834,tz,tza,"Tanzania, United Republic of",9.4,89%,,31.1,1.892
+764,th,tha,Thailand,8.3,98%,40.6,45.4,2.205
+626,tl,tls,Timor-Leste,2.1,,41.9,35.3,1.873
+768,tg,tgo,Togo,3.1,80%,,29.5,2.239
+776,to,ton,Tonga,1.5,,,45.1,
+780,tt,tto,Trinidad and Tobago,8.4,92%,,47.5,2.029
+788,tn,tun,Tunisia,1.9,93%,29.3,46.7,2.108
+792,tr,tur,Turkey,2.0,64%,36.9,42.6,2.843
+795,tm,tkm,Turkmenistan,5.4,80%,,43.9,2.154
+798,tv,tuv,Tuvalu,1.7,,,,
+800,ug,uga,Uganda,9.5,93%,,35.6,2.219
+804,ua,ukr,Ukraine,8.6,46%,30.2,49.5,2.66
+784,ae,are,United Arab Emirates,3.8,76%,72.3,55.6,1.848
+826,gb,gbr,United Kingdom of Great Britain and Northern Ireland,11.4,25%,100.3,81.3,1.658
+840,us,usa,United States of America,9.8,67%,100.0,69.3,2.337
+858,uy,ury,Uruguay,10.8,40%,,49.1,1.817
+860,uz,uzb,Uzbekistan,2.7,55%,,44.3,2.062
+548,vu,vut,Vanuatu,1.0,,,28.9,
+862,ve,ven,Venezuela (Bolivarian Republic of),5.6,79%,,50.3,2.934
+704,vn,vnm,Viet Nam,8.3,15%,35.0,33.4,1.835
+887,ye,yem,Yemen,0.1,98%,,,3.407
+894,zm,zmb,Zambia,4.8,95%,29.6,34.7,1.964
+716,zw,zwe,Zimbabwe,4.8,88%,,37.0,2.49
