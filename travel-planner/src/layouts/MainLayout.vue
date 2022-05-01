@@ -99,20 +99,24 @@
               </q-card>
 
               <q-card class="q-pa-lg q-mb-md">
-              <p class="q-pb-md">Temperature not important --- Temperature important</p>
-              <q-field outlined name="temp_imp">
-                <q-slider
-                  name="temp_imp"
-                  v-model="temperature"
-                  snap
-                  label
-                  label-always
-                  markers
-                  :min="-10"
-                  :max="10"
-                />
-              </q-field>
-            </q-card>
+                <div class="row justify-between">
+                  <p class="q-pb-md">Temperature not important</p>
+                  <p class="q-pb-md">Temperature important</p>
+                </div>
+<!--                <p class="q-pb-md">Temperature not important -&#45;&#45; Temperature important</p>-->
+                <q-field outlined name="temp_imp">
+                  <q-slider
+                    name="temp_imp"
+                    v-model="temperature"
+                    snap
+                    label
+                    label-always
+                    markers
+                    :min="-10"
+                    :max="10"
+                  />
+                </q-field>
+              </q-card>
 
             <q-card class="q-pa-lg q-mb-md">
               <p class="q-pb-md">Low Safety --- High Safety</p>
