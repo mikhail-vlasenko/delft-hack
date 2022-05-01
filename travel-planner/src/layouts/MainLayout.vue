@@ -93,6 +93,65 @@
             @submit.prevent="onSubmit"
           >
             <q-card class="q-pa-lg q-mb-md">
+              <div class="q-pa-md">
+                <q-btn-dropdown color="primary" label="Dropdown Button">
+                  <q-list>
+                    <q-item clickable v-close-popup @click="onItemClick">
+                      <q-item-section>
+                        <q-item-label>Very hot</q-item-label>
+                      </q-item-section>
+                    </q-item>
+
+                    <q-item clickable v-close-popup @click="onItemClick">
+                      <q-item-section>
+                        <q-item-label>Hot</q-item-label>
+                      </q-item-section>
+                    </q-item>
+
+                    <q-item clickable v-close-popup @click="onItemClick">
+                      <q-item-section>
+                        <q-item-label>Warm</q-item-label>
+                      </q-item-section>
+                    </q-item>
+
+                    <q-item clickable v-close-popup @click="onItemClick">
+                      <q-item-section>
+                        <q-item-label>Chilly</q-item-label>
+                      </q-item-section>
+                    </q-item>
+
+                    <q-item clickable v-close-popup @click="onItemClick">
+                      <q-item-section>
+                        <q-item-label>Cold</q-item-label>
+                      </q-item-section>
+                    </q-item>
+
+                    <q-item clickable v-close-popup @click="onItemClick">
+                      <q-item-section>
+                        <q-item-label>Very cold</q-item-label>
+                      </q-item-section>
+                    </q-item>
+                  </q-list>
+                </q-btn-dropdown>
+              </div>
+              <q-card class="q-pa-lg q-mb-md">
+              <p class="q-pb-md">Temperature not important --- Temperature important</p>
+              <q-field outlined name="temp_imp">
+                <q-slider
+                  name="temp_imp"
+                  v-model="safety"
+                  snap
+                  label
+                  label-always
+                  markers
+                  :min="0"
+                  :max="10"
+                />
+              </q-field>
+            </q-card>
+            </q-card>
+
+            <q-card class="q-pa-lg q-mb-md">
               <p class="q-pb-md">Low Safety --- High Safety</p>
               <q-field outlined name="safety">
                 <q-slider
@@ -270,7 +329,7 @@ export default defineComponent({
       // console.log(evt)
       let res = await axios({
         method: 'post',
-        url: 'http://localhost:5000/submit',
+        url: 'http://localhost:7777/submit',
         headers: {},
         data: {
           safety: safety.value,

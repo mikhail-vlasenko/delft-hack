@@ -10,15 +10,15 @@ app = Flask(__name__)
 
 
 def temp_range(temp):
-    if temp < 0:
+    if temp < 0.1:
         return 0
-    if temp < 10:
+    if temp < 0.3:
         return 1
-    if temp < 17:
+    if temp < 0.5:
         return 2
-    if temp < 22:
+    if temp < 0.7:
         return 3
-    if temp < 28:
+    if temp < 0.9:
         return 4
     return 5
 
@@ -49,8 +49,10 @@ def get_rankings():  # put application's code here
     df['windy days'] = 1 - df['windy days']
     df['index_prices'] = 1 - df['index_prices']
     df['index_safety'] = 1 - df['index_safety']
+    df['temp_range'] = df['temp'].apply(temp_range)
 
-    df['score'] = df['top 5 distance'] * walkability ** 2 + \
+    df['score'] = - abs(df['temp_range'] - temperature) / 3 * temperature_importance ** 2 + \
+                  df['top 5 distance'] * walkability ** 2 + \
                   df['eng'] * english ** 2 + \
                   df['precipitation'] * weather ** 2 + \
                   df['sunshine'] * weather ** 2 + \
@@ -63,7 +65,7 @@ def get_rankings():  # put application's code here
 
     df.sort_values('score', ascending=False, inplace=True)
 
-    best_countries = list(df['country'].iloc[:10].values)
+    best_countries = list(df['country'].iloc[:5].values)
 
     final_list = []
     for country in best_countries:
