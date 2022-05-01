@@ -1,5 +1,3 @@
-import logging
-
 from flask import Flask
 from flask import request
 from flask import Response
@@ -43,4 +41,4 @@ if __name__ == '__main__':
     df['windy days'] = 1 - df['windy days']
     df['index_prices'] = 1 - df['index_prices']
     df['index_safety'] = 1 - df['index_safety']
-    app.run()
+    app.run(port=7777)

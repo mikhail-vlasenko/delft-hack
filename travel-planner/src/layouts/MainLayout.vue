@@ -246,7 +246,7 @@ export default defineComponent({
       // console.log(evt)
       let res = await axios({
         method: 'post',
-        url: 'http://localhost:5000/submit',
+        url: 'http://localhost:7777/submit',
         headers: {},
         data: {
           safety: safety.value,
