@@ -12,6 +12,50 @@
       </q-toolbar>
     </q-header>
 
+    <q-dialog v-model="alert">
+      <q-card class="my-card">
+        <q-img
+          :src="img_link"
+        />
+
+        <q-card-section>
+          <q-btn
+            fab
+            color="primary"
+            icon="place"
+            class="absolute"
+            style="top: 0; right: 12px; transform: translateY(-50%);"
+          />
+
+          <div class="row no-wrap items-center">
+            <div class="col text-h6 ellipsis">
+              {{ countryLoc }}
+            </div>
+            <div class="col-auto text-grey text-caption q-pt-md row no-wrap items-center">
+            </div>
+          </div>
+
+          <q-rating readonly v-model="stars" :max="5" size="32px" />
+        </q-card-section>
+
+        <q-card-section class="q-pt-none">
+          <div class="text-subtitle1">
+            Suggested Holiday Location
+          </div>
+          <div class="text-caption text-grey">
+            Your ideal holiday destination was discovered using our custom algorithm and datasets.
+          </div>
+        </q-card-section>
+
+        <q-separator />
+
+        <q-card-actions align="right">
+          <q-btn v-close-popup flat color="primary" label="More info" @click="redir" />
+<!--          <q-btn v-close-popup flat color="primary" round icon="event" />-->
+        </q-card-actions>
+      </q-card>
+    </q-dialog>
+
 <!--    <q-page-container>-->
 <!--      <router-view />-->
 <!--    </q-page-container>-->
@@ -25,104 +69,128 @@
             @submit.prevent="onSubmit"
           >
             <q-card class="q-pa-lg q-mb-md">
-              <p>Overall Safety</p>
+              <p class="q-pb-md">Low Safety --- High Safety</p>
               <q-field outlined name="safety">
                 <q-slider
                   name="safety"
                   v-model="safety"
-                  marker-labels
-                  :min="0"
+                  snap
+                  label
+                  label-always
+                  markers
+                  :min="-10"
                   :max="10"
                 />
               </q-field>
             </q-card>
 
             <q-card class="q-pa-lg q-mb-md">
-              <p>Low Prices</p>
+              <p class="q-pb-md">Expensive --- Cheap</p>
               <q-field outlined name="price">
                 <q-slider
                   name="price"
                   v-model="price"
-                  marker-labels
-                  :min="0"
+                  snap
+                  label
+                  label-always
+                  markers
+                  :min="-10"
                   :max="10"
                 />
               </q-field>
             </q-card>
 
             <q-card class="q-pa-lg q-mb-md">
-              <p>Good Weather</p>
+              <p class="q-pb-md">Bad Weather --- Good Weather</p>
               <q-field outlined name="weather">
                 <q-slider
                   name="weather"
                   v-model="weather"
-                  marker-labels
-                  :min="0"
+                  snap
+                  label
+                  label-always
+                  markers
+                  :min="-10"
                   :max="10"
                 />
               </q-field>
             </q-card>
 
             <q-card class="q-pa-lg q-mb-md">
-              <p>Knowledge of English</p>
+              <p class="q-pb-md">Low Knowledge of English --- High Knowledge of English</p>
               <q-field outlined name="english">
                 <q-slider
                   name="english"
                   v-model="english"
-                  marker-labels
-                  :min="0"
+                  snap
+                  label
+                  label-always
+                  markers
+                  :min="-10"
                   :max="10"
                 />
               </q-field>
             </q-card>
 
             <q-card class="q-pa-lg q-mb-md">
-              <p>Walkability</p>
+              <p class="q-pb-md">Low Walkability - High Walkability</p>
               <q-field outlined name="walkability">
                 <q-slider
                   name="walkability"
                   v-model="walkability"
-                  marker-labels
-                  :min="0"
+                  snap
+                  label
+                  label-always
+                  markers
+                  :min="-10"
                   :max="10"
                 />
               </q-field>
             </q-card>
 
             <q-card class="q-pa-lg q-mb-md">
-              <p>Cleanliness</p>
+              <p class="q-pb-md">Dirty --- Clean</p>
               <q-field outlined name="cleanliness">
                 <q-slider
                   name="cleanliness"
                   v-model="cleanliness"
-                  marker-labels
-                  :min="0"
+                  snap
+                  label
+                  label-always
+                  markers
+                  :min="-10"
                   :max="10"
                 />
               </q-field>
             </q-card>
 
             <q-card class="q-pa-lg q-mb-md">
-              <p>Religiousness</p>
+              <p class="q-pb-md">Not Religious --- Very Religious</p>
               <q-field outlined name="religiousness">
                 <q-slider
                   name="religiousness"
                   v-model="religiousness"
-                  marker-labels
-                  :min="0"
+                  snap
+                  label
+                  label-always
+                  markers
+                  :min="-10"
                   :max="10"
                 />
               </q-field>
             </q-card>
 
             <q-card class="q-pa-lg q-mb-md">
-              <p>Alcohol Culture</p>
+              <p class="q-pb-md">Low Alcohol Consumption --- High Alcohol Consumption</p>
               <q-field outlined name="alcohol">
                 <q-slider
                   name="alcohol"
                   v-model="alcohol"
-                  marker-labels
-                  :min="0"
+                  snap
+                  label
+                  label-always
+                  markers
+                  :min="-10"
                   :max="10"
                 />
               </q-field>
@@ -146,22 +214,36 @@
 <script>
 import { defineComponent, ref } from 'vue'
 import axios from 'axios'
+import {useQuasar} from "quasar";
+import {useRouter} from "vue-router";
+
+const $q = useQuasar()
 
 export default defineComponent({
   name: 'MainLayout',
   setup: () => {
 
-    const safety = ref(5)
-    const price = ref(5)
-    const weather = ref(5)
-    const english = ref(5)
-    const walkability = ref(5)
-    const cleanliness = ref(5)
-    const religiousness = ref(5)
-    const alcohol = ref(5)
+    const safety = ref(0)
+    const price = ref(0)
+    const weather = ref(0)
+    const english = ref(0)
+    const walkability = ref(0)
+    const cleanliness = ref(0)
+    const religiousness = ref(0)
+    const alcohol = ref(0)
+    let img_link = ref('')
+    let countryLoc = ref('')
+    let stars = ref(5)
+    let alert = ref(false)
+
+    const redir = (evt) => {
+      window.open(`https://www.google.com/search?q=${countryLoc.value}`, '_blank')
+      // this.$router.push(`https://www.google.com/search?q=${countryLoc.value}`)
+      //redirect(`https://www.google.com/search?q=${countryLoc.value}`)
+    }
 
     const onSubmit = async (evt) => {
-      console.log(evt)
+      // console.log(evt)
       let res = await axios({
         method: 'post',
         url: 'https://randomthing2.free.beeceptor.com',
@@ -177,14 +259,16 @@ export default defineComponent({
           alcohol: alcohol.value
         }
       })
-
-      //let data = res.data;
-      //console.log(data);
+      let data = res.data;
+      console.log(data);
+      img_link.value = data.media
+      countryLoc.value = data.country
+      alert.value = true
       //evt.target.submit()
     }
 
     return {
-      safety, price, weather, english, walkability, cleanliness, religiousness, alcohol, onSubmit
+      safety, price, weather, english, walkability, cleanliness, religiousness, alcohol, onSubmit, alert, img_link, countryLoc, stars, redir
 
     };
   },
