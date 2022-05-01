@@ -282,7 +282,7 @@ export default defineComponent({
     let stars = ref(5)
     let alert = ref(false)
     let slide = ref(0)
-    let selectModel = ref(null)
+    let selectModel = ref('Warm')
     let selectOptions = ["Very Hot", "Hot", "Warm", "Chilly", "Cold", "Very Cold"]
 
     const redir = (evt) => {
