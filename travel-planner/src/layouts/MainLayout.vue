@@ -119,7 +119,10 @@
               </q-card>
 
             <q-card class="q-pa-lg q-mb-md">
-              <p class="q-pb-md">Low Safety --- High Safety</p>
+              <div class="row justify-between">
+                  <p class="q-pb-md">Low Safety</p>
+                  <p class="q-pb-md">High Safety</p>
+                </div>
               <q-field outlined name="safety">
                 <q-slider
                   name="safety"
@@ -135,7 +138,10 @@
             </q-card>
 
             <q-card class="q-pa-lg q-mb-md">
-              <p class="q-pb-md">Expensive --- Cheap</p>
+              <div class="row justify-between">
+                  <p class="q-pb-md">Expensive</p>
+                  <p class="q-pb-md">Cheap</p>
+              </div>
               <q-field outlined name="price">
                 <q-slider
                   name="price"
@@ -151,7 +157,10 @@
             </q-card>
 
             <q-card class="q-pa-lg q-mb-md">
-              <p class="q-pb-md">Bad Weather --- Good Weather</p>
+              <div class="row justify-between">
+                  <p class="q-pb-md">Bad Weather</p>
+                  <p class="q-pb-md">Good Weather</p>
+                </div>
               <q-field outlined name="weather">
                 <q-slider
                   name="weather"
@@ -167,7 +176,10 @@
             </q-card>
 
             <q-card class="q-pa-lg q-mb-md">
-              <p class="q-pb-md">Low Knowledge of English --- High Knowledge of English</p>
+              <div class="row justify-between">
+                  <p class="q-pb-md">Low Knowledge of English</p>
+                  <p class="q-pb-md">High Knowledge of English</p>
+                </div>
               <q-field outlined name="english">
                 <q-slider
                   name="english"
@@ -183,7 +195,10 @@
             </q-card>
 
             <q-card class="q-pa-lg q-mb-md">
-              <p class="q-pb-md">Low Walkability - High Walkability</p>
+              <div class="row justify-between">
+                  <p class="q-pb-md">Low Walkability</p>
+                  <p class="q-pb-md">High Walkability</p>
+                </div>
               <q-field outlined name="walkability">
                 <q-slider
                   name="walkability"
@@ -199,7 +214,10 @@
             </q-card>
 
             <q-card class="q-pa-lg q-mb-md">
-              <p class="q-pb-md">Dirty --- Clean</p>
+              <div class="row justify-between">
+                  <p class="q-pb-md">Dirty</p>
+                  <p class="q-pb-md">Clean</p>
+                </div>
               <q-field outlined name="cleanliness">
                 <q-slider
                   name="cleanliness"
@@ -215,7 +233,10 @@
             </q-card>
 
             <q-card class="q-pa-lg q-mb-md">
-              <p class="q-pb-md">Not Religious --- Very Religious</p>
+              <div class="row justify-between">
+                  <p class="q-pb-md">Not Religious</p>
+                  <p class="q-pb-md">Very Religious</p>
+                </div>
               <q-field outlined name="religiousness">
                 <q-slider
                   name="religiousness"
@@ -231,7 +252,10 @@
             </q-card>
 
             <q-card class="q-pa-lg q-mb-md">
-              <p class="q-pb-md">Low Alcohol Consumption --- High Alcohol Consumption</p>
+              <div class="row justify-between">
+                  <p class="q-pb-md">Low Alcohol Consumption</p>
+                  <p class="q-pb-md">High Alcohol Consumption</p>
+                </div>
               <q-field outlined name="alcohol">
                 <q-slider
                   name="alcohol"
